@@ -144,3 +144,26 @@ mantiene habilitados los requisitos de complejidad.
 ### Política de contraseñas
 
 ![Política de contraseñas](26-password-policy.png)
+
+## Directivas de Grupo
+
+Se creó la GPO `GPO-Dominio-Seguridad` para establecer una política básica de
+seguridad de contraseñas en el dominio `adlab.local`.
+
+La política establece una longitud mínima de contraseña de 10 caracteres y
+mantiene habilitados los requisitos de complejidad.
+
+### Vinculación de la GPO
+
+La GPO se vinculó al dominio `adlab.local` y se habilitó su vínculo, utilizando
+`Usuarios autenticados` como filtrado de seguridad.
+
+![Vinculación de GPO-Dominio-Seguridad](27-gpo-domain-link.png)
+
+### Aplicación de la GPO
+
+En `CLI-WIN01` se utilizó `gpupdate /force` y posteriormente `gpresult` para
+comprobar que `GPO-Dominio-Seguridad` se aplica correctamente al equipo
+cliente.
+
+![GPO aplicada en CLI-WIN01](28-gpo-applied.png)
