@@ -46,9 +46,38 @@ IPv4 basado en la red 192.168.10.0/24.
 
 - Red: 192.168.10.0/24
 - Máscara: 255.255.255.0
-- Gateway: 192.168.10.1
+- Gateway: No configurado inicialmente
 - Servidor DNS: 192.168.10.10
 
+## Topología de red virtual
+
+Se utilizará una red Host-Only de VirtualBox para crear una red privada
+entre las máquinas virtuales y el equipo anfitrión.
+
+La red utilizará el rango:
+
+192.168.10.0/24
+
+La salida a Internet no será necesaria durante la primera fase del
+laboratorio. Si posteriormente se necesita acceso a Internet desde las
+máquinas virtuales, se añadirá un segundo adaptador de red mediante NAT,
+manteniendo la red 192.168.10.0/24 como red interna del laboratorio.
+
+### Direccionamiento inicial
+
+| Dispositivo | Dirección |
+|---|---|
+| SRV-DC01 | 192.168.10.10 |
+| SRV-LNX01 | 192.168.10.20 |
+| CLI-WIN01 | DHCP |
+| Host Windows | 192.168.10.1 |
+
+### Servicios
+
+SRV-DC01 proporcionará posteriormente el servicio DHCP para los clientes
+del laboratorio.
+
+El servidor DNS del dominio será SRV-DC01 (192.168.10.10).
 ### Direccionamiento
 
 | Máquina | IP | Configuración |
