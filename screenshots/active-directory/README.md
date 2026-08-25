@@ -108,6 +108,24 @@ El usuario `usuario.test` se encuentra dentro de la OU `Usuarios/Usuarios`.
 
 ![Usuario estándar](19-standard-user.png)
 
+## Unión del cliente al dominio
+
+El equipo `CLI-WIN01` fue configurado con la dirección `192.168.10.20` y
+utiliza `SRV-DC01` (`192.168.10.10`) como servidor DNS.
+
+Posteriormente, `CLI-WIN01` se incorporó correctamente al dominio
+`adlab.local`.
+
+### Pertenencia al dominio
+
+![CLI-WIN01 unido al dominio](24-client-domain-membership.png)
+
+### Autenticación de usuario del dominio
+
+Se verificó el inicio de sesión utilizando la cuenta `adlab\usuario.test`.
+
+![Usuario autenticado en el dominio](25-domain-user-login.png)
+
 ### Pertenencia a grupos
 
 Se ha comprobado la pertenencia del usuario `it.admin` al grupo de seguridad
