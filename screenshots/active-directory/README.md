@@ -132,3 +132,15 @@ Posteriormente, `CLI-WIN01` se incorporó correctamente al dominio
 Se verificó el inicio de sesión utilizando la cuenta `adlab\usuario.test`.
 
 ![Usuario autenticado en el dominio](25-domain-user-login.png)
+
+## Directivas de Grupo
+
+Se creó la GPO `GPO-Dominio-Seguridad` para establecer una política básica de
+seguridad de contraseñas en el dominio.
+
+La política establece una longitud mínima de contraseña de 10 caracteres y
+mantiene habilitados los requisitos de complejidad.
+
+### Política de contraseñas
+
+![Política de contraseñas](26-password-policy.png)
