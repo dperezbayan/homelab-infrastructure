@@ -74,3 +74,43 @@ Las capturas y documentación no deben contener:
 
 Las cuentas y credenciales utilizadas en el laboratorio serán exclusivamente
 de prueba.
+
+## Usuarios de prueba
+
+Se han creado tres cuentas de usuario para validar la administración del
+dominio y la pertenencia a grupos de seguridad.
+
+| Usuario | OU | Grupo |
+|---|---|---|
+| `it.admin` | `Usuarios/IT` | `IT-Admins` |
+| `admin.usuario` | `Usuarios/Administracion` | `GG-Administracion` |
+| `usuario.test` | `Usuarios/Usuarios` | `GG-Usuarios` |
+
+Las cuentas se utilizan exclusivamente para las pruebas del laboratorio.
+
+### Usuarios creados
+
+#### Usuario de IT
+
+El usuario `it.admin` se encuentra dentro de la OU `Usuarios/IT`.
+
+![Usuario IT](17-it-user.png)
+
+#### Usuario de Administración
+
+El usuario `admin.usuario` se encuentra dentro de la OU `Usuarios/Administracion`.
+
+![Usuario de Administración](18-administration-user.png)
+
+#### Usuario estándar
+
+El usuario `usuario.test` se encuentra dentro de la OU `Usuarios/Usuarios`.
+
+![Usuario estándar](19-standard-user.png)
+
+### Pertenencia a grupos
+
+Se ha comprobado la pertenencia del usuario `it.admin` al grupo de seguridad
+`IT-Admins`.
+
+![Pertenencia al grupo IT-Admins](20-group-membership.png)
