@@ -33,25 +33,22 @@ Actualmente en planificación:
 - Bash
 - Git
 - GitHub
-- 
+
 ## Arquitectura
 
 ```mermaid
 flowchart TB
-    HOST["PC anfitrión<br/>Windows"]
-
-    NETWORK["Red Host-Only<br/>192.168.10.0/24"]
-
-    DC["SRV-DC01<br/>192.168.10.10<br/><br/>Active Directory<br/>DNS<br/>DHCP"]
-
-    LNX["SRV-LNX01<br/>192.168.10.20<br/><br/>Linux Server"]
-
-    CLI["CLI-WIN01<br/>DHCP<br/><br/>Windows Client"]
+    HOST["PC anfitrión<br>Windows"]
+    NETWORK["Red Host-Only<br>192.168.10.0/24"]
+    DC["SRV-DC01<br>192.168.10.10<br><br>Active Directory<br>DNS<br>DHCP"]
+    LNX["SRV-LNX01<br>192.168.10.20<br><br>Linux Server"]
+    CLI["CLI-WIN01<br>DHCP<br><br>Windows Client"]
 
     HOST --- NETWORK
     NETWORK --- DC
     NETWORK --- LNX
     NETWORK --- CLI
+```
 
 ## Documentación
 
