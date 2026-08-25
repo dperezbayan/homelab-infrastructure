@@ -6,11 +6,17 @@ del laboratorio.
 
 ## Evidencias
 
-| Archivo | Descripción |
-|---|---|
-| `03-windows-server-edition.png` | Edición de Windows Server 2019 seleccionada durante la instalación |
-| `04-server-hostname.png` | Nombre de equipo configurado como `SRV-DC01` |
+### 03 — Edición de Windows Server
 
+Edición de Windows Server 2019 seleccionada durante la instalación.
+
+![Edición de Windows Server 2019](03-windows-server-edition.png)
+
+### 04 — Nombre del servidor
+
+Nombre de equipo configurado como `SRV-DC01`.
+
+![Nombre del servidor](04-server-hostname.png)
 ## Convenciones
 
 Las capturas se almacenan siguiendo una numeración correlativa y describen
