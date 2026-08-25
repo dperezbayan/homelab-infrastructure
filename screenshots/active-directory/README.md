@@ -29,6 +29,24 @@ La infraestructura de Active Directory tendrá como objetivos:
 - Aplicar Directivas de Grupo (GPO).
 - Integrar posteriormente equipos cliente Windows en el dominio.
 
+## Estructura de Unidades Organizativas
+
+El dominio `adlab.local` utiliza una estructura de Unidades Organizativas (OU)
+para separar usuarios, equipos, servidores y grupos.
+
+```text
+adlab.local
+├── Usuarios
+│   ├── Administracion
+│   ├── IT
+│   └── Usuarios
+├── Equipos
+│   ├── PuestosTrabajo
+│   └── Portatiles
+├── Servidores
+└── Grupos
+```
+
 ## Seguridad
 
 Las capturas y documentación no deben contener:
