@@ -37,11 +37,57 @@ operativo principal.
 
 ## Red
 
-Se utilizará una red virtual privada para comunicar las máquinas del
-laboratorio.
+## Diseño de red
 
-La configuración definitiva de direccionamiento IP se documentará antes
-de comenzar la instalación.
+El laboratorio utilizará una red privada virtualizada con direccionamiento
+IPv4 basado en la red 192.168.10.0/24.
+
+### Parámetros
+
+- Red: 192.168.10.0/24
+- Máscara: 255.255.255.0
+- Gateway: 192.168.10.1
+- Servidor DNS: 192.168.10.10
+
+### Direccionamiento
+
+| Máquina | IP | Configuración |
+|---|---|---|
+| SRV-DC01 | 192.168.10.10 | Estática |
+| SRV-LNX01 | 192.168.10.20 | Estática |
+| CLI-WIN01 | DHCP | Automática |
+
+### Dominio
+
+El dominio interno utilizado por el laboratorio será:
+
+empresa.test
+
+### Nombres de host
+
+- SRV-DC01.empresa.test
+- SRV-LNX01.empresa.test
+- CLI-WIN01.empresa.test
+
+### Servicios de red
+
+SRV-DC01 proporcionará inicialmente:
+
+- Active Directory Domain Services
+- DNS
+- DHCP
+
+## Justificación del diseño
+
+Se ha utilizado una red /24 para disponer de un rango sencillo de gestionar
+durante el laboratorio y suficiente para el número de dispositivos previsto.
+
+Las direcciones de los servidores se han definido de forma estática para
+garantizar que los servicios de infraestructura sean siempre accesibles
+desde la misma dirección IP.
+
+El equipo cliente utilizará DHCP para simular el comportamiento habitual
+de los equipos de usuario dentro de una red empresarial.
 
 ## Evolución del laboratorio
 
