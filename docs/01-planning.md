@@ -16,41 +16,24 @@ Oracle VirtualBox.
 
 ## Máquinas virtuales
 
-### SRV-DC01
+## Recursos del equipo anfitrión
 
-Servidor principal de infraestructura.
+- RAM: 16 GB DDR3
+- CPU: Intel Core i7-5600U @ 2.60 GHz
+- Núcleos: 2 físicos / 4 hilos
+- Espacio libre disponible: aproximadamente 300 GB
 
-Funciones previstas:
+## Asignación de recursos
 
-- Active Directory Domain Services
-- DNS
-- DHCP
-- Gestión de usuarios y grupos
-- Directivas de grupo (GPO)
+| Máquina | RAM | CPU | Disco | Función |
+|---|---:|---:|---:|---|
+| SRV-DC01 | 4 GB | 2 vCPU | 60 GB | Windows Server, AD, DNS y DHCP |
+| CLI-WIN01 | 4 GB | 2 vCPU | 60 GB | Cliente Windows |
+| SRV-LNX01 | 2 GB | 1 vCPU | 30 GB | Ubuntu Server y servicios Linux |
 
-### SRV-LNX01
-
-Servidor Linux.
-
-Funciones previstas:
-
-- SSH
-- Servidor web
-- Base de datos
-- Automatización mediante Bash
-- Servicios adicionales según las necesidades del laboratorio
-
-### CLI-WIN01
-
-Equipo cliente Windows.
-
-Funciones previstas:
-
-- Unión al dominio
-- Aplicación de GPO
-- Pruebas de autenticación
-- Acceso a recursos compartidos
-- Comprobación de servicios de red
+La asignación se ha diseñado teniendo en cuenta las limitaciones de CPU
+del equipo anfitrión y dejando recursos suficientes para el sistema
+operativo principal.
 
 ## Red
 
