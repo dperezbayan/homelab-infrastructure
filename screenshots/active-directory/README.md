@@ -47,6 +47,20 @@ adlab.local
 └── Grupos
 ```
 
+## Grupos de seguridad
+
+Se han creado grupos de seguridad para facilitar la administración de permisos
+y la aplicación de políticas de grupo.
+
+| Grupo | Tipo | Ámbito | Propósito |
+|---|---|---|---|
+| `IT-Admins` | Seguridad | Global | Administradores del área de TI |
+| `GG-Usuarios` | Seguridad | Global | Usuarios estándar del dominio |
+| `GG-Administracion` | Seguridad | Global | Usuarios del área de administración |
+
+La utilización de grupos permite evitar asignar permisos individualmente a
+cada usuario y facilita la administración de la infraestructura.
+
 ## Seguridad
 
 Las capturas y documentación no deben contener:
