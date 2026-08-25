@@ -13,10 +13,11 @@ en el servidor `SRV-DC01`.
 
 ## Evidencias
 
-| Archivo | Descripción |
-|---|---|
-| `08-add-ad-ds-role.png` | Asistente de Windows Server preparado para instalar el rol Servicios de dominio de Active Directory |
+### 08 — Instalación de Active Directory Domain Services
 
+Asistente de Windows Server preparado para instalar el rol de Servicios de dominio de Active Directory (AD DS).
+
+![Instalación de Active Directory Domain Services](08-add-ad-ds-role.png)
 ## Objetivos
 
 La infraestructura de Active Directory tendrá como objetivos:
