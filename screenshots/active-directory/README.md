@@ -108,6 +108,13 @@ El usuario `usuario.test` se encuentra dentro de la OU `Usuarios/Usuarios`.
 
 ![Usuario estándar](19-standard-user.png)
 
+### Pertenencia a grupos
+
+Se ha comprobado la pertenencia del usuario `it.admin` al grupo de seguridad
+`IT-Admins`.
+
+![Pertenencia al grupo IT-Admins](20-group-membership.png)
+
 ## Unión del cliente al dominio
 
 El equipo `CLI-WIN01` fue configurado con la dirección `192.168.10.20` y
@@ -125,10 +132,3 @@ Posteriormente, `CLI-WIN01` se incorporó correctamente al dominio
 Se verificó el inicio de sesión utilizando la cuenta `adlab\usuario.test`.
 
 ![Usuario autenticado en el dominio](25-domain-user-login.png)
-
-### Pertenencia a grupos
-
-Se ha comprobado la pertenencia del usuario `it.admin` al grupo de seguridad
-`IT-Admins`.
-
-![Pertenencia al grupo IT-Admins](20-group-membership.png)
