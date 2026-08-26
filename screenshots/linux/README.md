@@ -1,8 +1,6 @@
-# Linux Server — Capturas
+# Linux Server 
 
 Esta carpeta contiene las capturas correspondientes a la instalación y configuración inicial del servidor Linux `SRV-LNX01`.
-
-## Capturas
 
 ### 38 — Instalación de Ubuntu Server
 
@@ -18,7 +16,7 @@ La máquina virtual se ha configurado con:
 
 ### 39 — Configuración de red
 
-**Archivo:** `39-ubuntu-network.png`
+`39-ubuntu-network.png`
 
 Captura de la configuración de red de `SRV-LNX01`.
 
