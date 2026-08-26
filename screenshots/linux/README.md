@@ -14,11 +14,13 @@ La máquina virtual se ha configurado con:
 
 ---
 
-### 39 — Configuración de red
+## 39 — Configuración de red
 
-`39-ubuntu-network.png`
+**Archivo:** `39-ubuntu-network.png`
 
 Captura de la configuración de red de `SRV-LNX01`.
+
+![Configuración de red de Ubuntu Server](./39-ubuntu-network.png)
 
 El servidor dispone de dos interfaces de red:
 
